@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+      body {
+        margin: 0 auto;
+        padding: 0px;
+      }
+
+      .topo{
+        float: left;
+      }
+
+      .mc{
+        padding: 5px;
+        overflow-x: none;
+        overflow-y: none;
+      }
+
+      .psc{
+          position: relative;
+          background: white;
+          height: 50%;
+          width: 497px;
+          margin: 0 auto;
+          margin-top: 40px;
+          /*resize: both;*/
+          overflow: hidden;
+          background-color: /*blue;*/
+          padding-right: 0px;
+          border: 3px solid black;
+          border-radius: 7px;
+          
+      }
+
+      .botao{
+          position: relative;
+          margin-right: 50%;
+          left: 50%;
+      }
+
+
+    </style>
+  </head>
+  <body>
+
+<div class="psc">
+    <canvas  class="mc" id="myCanvas" width="110" height="110" onclick="myFunction(this.id)"></canvas>
+    <canvas  class="mc" id="myCanvas2" width="110" height="110" onclick="myFunction(this.id)"></canvas>
+    <canvas  class="mc" id="myCanvas3" width="110" height="110" onclick="myFunction(this.id)"></canvas>
+    <canvas  class="mc" id="myCanvas4" width="110" height="110" onclick="myFunction(this.id)"></canvas>
+
+    <canvas  class="mc" id="myCanvas5" width="110" height="110" onclick="myFunction(this.id)"></canvas>
+    <canvas  class="mc" id="myCanvas6" width="110" height="110" onclick="myFunction(this.id)"></canvas>
+    <canvas  class="mc" id="myCanvas7" width="110" height="110" onclick="myFunction(this.id)"></canvas>
+    <canvas  class="mc" id="myCanvas8" width="110" height="110" onclick="myFunction(this.id)"></canvas>
+
+    <canvas  class="mc" id="myCanvas9" width="110" height="110" onclick="myFunction(this.id)"></canvas>
+    <canvas  class="mc" id="myCanvas10" width="110" height="110" onclick="myFunction(this.id)"></canvas>
+    <canvas  class="mc" id="myCanvas11" width="110" height="110" onclick="myFunction(this.id)"></canvas>
+    <canvas  class="mc" id="myCanvas12" width="110" height="110" onclick="myFunction(this.id)"></canvas>
+
+    <canvas  class="mc" id="myCanvas13" width="110" height="110" onclick="myFunction(this.id)"></canvas>
+    <canvas  class="mc" id="myCanvas14" width="110" height="110" onclick="myFunction(this.id)"></canvas>
+    <canvas  class="mc" id="myCanvas15" width="110" height="110" onclick="myFunction(this.id)"></canvas>
+    <canvas  class="mc" id="myCanvas16" width="110" height="110" onclick="myFunction(this.id)"></canvas>
+
+
+
+
+</div>
+<br><br>
+   <a href="medio.html">  <input  class="botao" type="button" value="Avançar!"> </a>
+    <script>
+
+      function teste (nome, cor){
+          var canvas = document.getElementById(nome);
+          var context = canvas.getContext('2d');
+          var centerX = canvas.width / 2;
+          var centerY = canvas.height / 2;
+          var radius = 53;
+
+          context.beginPath();
+          context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+          context.fillStyle = cor;
+          context.fill();
+          context.lineWidth = 2;
+          context.strokeStyle = 'black';
+          context.stroke();
+      }
+
+
+
+
+
+
+function myFunction(e) {
+        var i = 1, err = 0, acc = 0;
+        var elementColor = document.getElementById(e);
+        var ctx=elementColor.getContext("2d");
+        // alert(ctx.fillStyle);
+
+            if (ctx.fillStyle == '#008000')
+            {
+              // alert ('acertou miseravi!!');
+              ctx.fillStyle = 'white';
+              ctx.fill();
+              ctx.lineWidth = 2;
+              ctx.stroke();
+            }
+}
+
+      //1 coluna
+      teste('myCanvas','#12F4CE');
+      teste('myCanvas2','#8DC58F');
+      teste('myCanvas3','#008000');
+      teste('myCanvas4','#A5A563');
+
+      teste('myCanvas5','#008000');
+      teste('myCanvas6','#A5A563');
+      teste('myCanvas7','#12F4CE');
+      teste('myCanvas8','#8DC58F');
+
+      teste('myCanvas9','#A5A563');
+      teste('myCanvas10','#12F4CE');
+      teste('myCanvas11','#8DC58F');
+      teste('myCanvas12','#008000');
+
+      teste('myCanvas13','#8DC58F');
+      teste('myCanvas14','#008000');
+      teste('myCanvas15','#A5A563');
+      teste('myCanvas16','#12F4CE');
+
+
+
+
+    </script>
+
+  </body>
+</html>

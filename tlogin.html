@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body{
+			margin: 0;
+			padding: 0;
+			font-family: sans-serif;
+		}
+
+		.caixalogin{
+			width: 320px;
+			height: 420px;
+			background-color: rgba(0,0,255,0.2);
+			color: black;
+			top: 50%;
+			left: 50%;
+			position: absolute;
+			transform: translate(-50%,-50%);
+			box-sizing: border-box;
+			padding: 70px 30px;
+			border-radius: 10px;
+		}
+
+		.avatar{
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			position: absolute;
+			top: -50px;
+			left: calc(50% - 50px);
+		}
+
+		h1{
+			margin: 0;
+			padding: 0 0 20px;
+			text-align: center;
+			font-size: 22px;
+		}
+
+		.caixalogin p{
+			margin: 0;
+			padding:0;
+			font-weight: bold;
+		}
+
+		.caixalogin input{
+			width: 100%;
+			margin-bottom: 20px;
+		}
+
+		.caixalogin input[type=text], input[type=password]{
+			border:none;
+			border-bottom: 1px solid #fff;
+			background: transparent;
+			outline: none;
+			height: 40px;
+			font-size: 16px;
+			color: black;
+		}
+
+		.caixalogin button{
+			width: 100%;
+			margin-bottom: 20px;
+			border:none;
+			outline: none;
+			height: 40px;
+			background: #fb2525;
+			color: #fff;
+			font-size: 18px;
+			border-radius: 20px;
+		}
+
+		#btnlogin {
+			font-size: 18px;
+			color: #fff;
+		}
+
+
+
+		.caixalogin button:hover{
+			cursor: pointer;
+			background-color: #0101DF;
+			color: white;
+		}
+
+		.caixalogin a{
+			text-decoration: none;
+			font-size: 12px;
+			line-height: 20px;
+			color: black;
+		}
+
+		.caixalogin a:hover{
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<div class="caixalogin">
+		<a href="Tela2.html">	<img src="ImgLogin/images.png" class="avatar"> </a>
+			<h1> Bem Vindo </h1>
+			<form>
+				<p>Nome</p>
+				<input type="text" name="" placeholder="Digite seu login">
+				<p>Senha</p>
+				<input type="password" name="" placeholder="Digite sua senha">
+				<button> <a id="btnlogin" href="Tela2.html"> Login  </a> </button>
+				<a href="#"> Esqueceu sua senha ?</a> <br>
+				<a href="#"> Cadastrar </a>
+			</form>
+	</div>
+</body>
+</html>

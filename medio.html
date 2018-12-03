@@ -1,0 +1,221 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+      body {
+        margin: 0 auto;
+        padding: 0px;
+      }
+
+      .topo{
+        float: left;
+      }
+
+      .mc{
+        padding: 5px;
+        overflow-x: none;
+        overflow-y: none;
+      }
+
+      .psc{
+          position: relative;
+          background: white;
+          height: 50%;
+          width: 620px;
+          margin: 0 auto;
+          margin-top: 40px;
+          /*resize: both;*/
+          overflow: hidden;
+          background-color: /*blue*/;*
+          padding-right: 0px;
+          border: 3px solid black;
+          border-radius: 7px;
+          
+      }
+
+      .botao{
+          position: relative;
+          margin-right: 50%;
+          left: 50%;
+      }
+
+
+    </style>
+  </head>
+  <body>
+
+<div class="psc">
+    <canvas  class="mc" id="myCanvas" width="90" height="90" onclick="myFunction(this.id)" ></canvas>
+    <canvas  class="mc" id="myCanvas2" width="90" height="90" onclick="myFunction(this.id)"></canvas>
+    <canvas  class="mc" id="myCanvas3" width="90" height="90" onclick="myFunction(this.id)"></canvas>
+    <canvas  class="mc" id="myCanvas4" width="90" height="90" onclick="myFunction(this.id)"></canvas>
+    <canvas  class="mc" id="myCanvas5" width="90" height="90" onclick="myFunction(this.id)"></canvas>
+    <canvas  class="mc" id="myCanvas6" width="90" height="90" onclick="myFunction(this.id)"></canvas>
+
+    <canvas  class="mc" id="myCanvas7" width="90" height="90" onclick="myFunction(this.id)"></canvas>
+    <canvas  class="mc" id="myCanvas8" width="90" height="90" onclick="myFunction(this.id)"></canvas>
+    <canvas  class="mc" id="myCanvas9" width="90" height="90" onclick="myFunction(this.id)"></canvas>
+    <canvas  class="mc" id="myCanvas10" width="90" height="90" onclick="myFunction(this.id)"></canvas>
+    <canvas  class="mc" id="myCanvas11" width="90" height="90" onclick="myFunction(this.id)"></canvas>
+    <canvas  class="mc" id="myCanvas12" width="90" height="90" onclick="myFunction(this.id)"></canvas>
+
+    <canvas  class="mc" id="myCanvas13" width="90" height="90" onclick="myFunction(this.id)"></canvas>
+    <canvas  class="mc" id="myCanvas14" width="90" height="90" onclick="myFunction(this.id)"></canvas>
+    <canvas  class="mc" id="myCanvas15" width="90" height="90" onclick="myFunction(this.id)"></canvas>
+    <canvas  class="mc" id="myCanvas16" width="90" height="90" onclick="myFunction(this.id)"></canvas>
+    <canvas  class="mc" id="myCanvas17" width="90" height="90" onclick="myFunction(this.id)"></canvas>
+    <canvas  class="mc" id="myCanvas18" width="90" height="90" onclick="myFunction(this.id)"></canvas>
+
+    <canvas  class="mc" id="myCanvas19" width="90" height="90" onclick="myFunction(this.id)"></canvas>
+    <canvas  class="mc" id="myCanvas20" width="90" height="90" onclick="myFunction(this.id)"></canvas>
+    <canvas  class="mc" id="myCanvas21" width="90" height="90" onclick="myFunction(this.id)"></canvas>
+    <canvas  class="mc" id="myCanvas22" width="90" height="90" onclick="myFunction(this.id)"></canvas>
+    <canvas  class="mc" id="myCanvas23" width="90" height="90" onclick="myFunction(this.id)"></canvas>
+    <canvas  class="mc" id="myCanvas24" width="90" height="90" onclick="myFunction(this.id)"></canvas>
+
+    <canvas  class="mc" id="myCanvas25" width="90" height="90" onclick="myFunction(this.id)"></canvas>
+    <canvas  class="mc" id="myCanvas26" width="90" height="90" onclick="myFunction(this.id)"></canvas>
+    <canvas  class="mc" id="myCanvas27" width="90" height="90" onclick="myFunction(this.id)"></canvas>
+    <canvas  class="mc" id="myCanvas28" width="90" height="90" onclick="myFunction(this.id)"></canvas>
+    <canvas  class="mc" id="myCanvas29" width="90" height="90" onclick="myFunction(this.id)"></canvas>
+    <canvas  class="mc" id="myCanvas30" width="90" height="90" onclick="myFunction(this.id)"></canvas>
+
+
+</div>
+<br><br>
+  <a href="dificil.html">  <input  class="botao"  id="btn"  type="button" value="Avançar!"> 
+    <script>
+
+      function teste (nome, cor){
+          var canvas = document.getElementById(nome);
+          var context = canvas.getContext('2d');
+          var centerX = canvas.width / 2;
+          var centerY = canvas.height / 2;
+          var radius = 40;
+
+          context.beginPath();
+          context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+          context.fillStyle = cor;
+          context.fill();
+          context.lineWidth = 2;
+          context.strokeStyle = 'black';
+          context.stroke();
+      }
+
+
+
+      function mouse(nome, corBorda){
+
+
+          var canvas = document.getElementById(nome);
+          var context = canvas.getContext('2d');
+          context.beginPath();
+          context.fill();
+          context.strokeStyle = corBorda;
+          context.stroke();
+          
+      }
+
+
+
+      function click (nome, cor, borda) {
+
+          var canvas = document.getElementById(nome);
+          var context = canvas.getContext('2d');
+          var centerX = canvas.width / 2;
+          var centerY = canvas.height / 2;
+          var radius = 40;
+
+          context.beginPath();
+          context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+          context.fillStyle = cor;
+          context.fill();
+          context.lineWidth = 2;
+          context.strokeStyle = borda;
+          context.stroke();
+
+}
+
+function testebotao()
+{
+        document.getElementById('btn');
+        alert("sahdiuashdiauhs");
+        var tst = 0;
+        tst = tst + 1;
+        alert(tst);
+}
+
+
+
+function clickk(e, borda){
+   /* context.beginPath();
+    context.arc(centerX, centerY, radius * 2, 0, 2 * Math.PI, false);
+    context.fillStyle = borda;
+    context.fill(); 
+    var cc = document.getElementById(e);  
+        var ctxx=cc.getContext("2d"); 
+          ctxx.strokeStyle = borda;*/
+      
+}
+
+function myFunction(e) {
+        var elementColor = document.getElementById(e);
+        var ctx=elementColor.getContext("2d");
+        /*alert(ctx.fillStyle);*/
+        if (ctx.fillStyle == '#234ee9')
+        {
+          // alert ('acertou miseravi!!');
+          ctx.fillStyle = 'white';
+          ctx.fill();
+          ctx.lineWidth = 2;
+          ctx.stroke();
+       
+        }
+}
+
+
+
+      //1 coluna
+      teste("myCanvas","#C480F6");
+      teste('myCanvas2','#5D3087');
+      teste('myCanvas3','#234ee9');
+      teste('myCanvas4','#13C4E8');
+      teste('myCanvas5','#510FEB');
+      teste('myCanvas6','#366A6B');
+
+      teste('myCanvas7','#234ee9');
+      teste('myCanvas8','#13C4E8');
+      teste('myCanvas9','#366A6B');
+      teste('myCanvas10','#5D3087');
+      teste('myCanvas11','#C480F6');
+      teste('myCanvas12','#510FEB');
+
+      teste('myCanvas13','#10F0CF');
+      teste('myCanvas14','#234ee9');
+      teste('myCanvas15','#510FEB');
+      teste('myCanvas16','#366A6B');
+      teste('myCanvas17','#13C4E8');
+      teste('myCanvas18','#C480F6');
+
+      teste('myCanvas19','#510FEB');
+      teste('myCanvas20','#10F0CF');
+      teste('myCanvas21','#234ee9');
+      teste('myCanvas22','#C480F6');
+      teste('myCanvas23','#366A6B');
+      teste('myCanvas24','#234ee9');
+
+      teste('myCanvas25','#366A6B');
+      teste('myCanvas26','#234ee9');
+      teste('myCanvas27','#510FEB');
+      teste('myCanvas28','#234ee9');
+      teste('myCanvas29','#5D3087');
+      teste('myCanvas30','#C480F6');
+
+
+
+
+    </script>
+
+  </body>
+</html>
